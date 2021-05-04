@@ -116,7 +116,7 @@ export default class SaveForm extends Component {
         let { addItems } = this.state;
         return (
             <div className="container">
-                <form onSubmit={this.onSubmit}>
+                <form onSubmit={this.onSubmit} onChange={this.handleChange}>
                     <h3>ENTER ORDER</h3>
                     <div className="form-group">
                         <label>Order Number</label>
